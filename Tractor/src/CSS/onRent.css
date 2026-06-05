@@ -1,0 +1,134 @@
+/* MAIN CONTAINER */
+.onrent-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url("/images/farm-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+}
+
+/* FORM CARD */
+.onrent-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  padding: 40px;
+  border-radius: 25px;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+
+  animation: fadeUp 0.8s ease;
+}
+
+/* TITLE */
+.onrent-form h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* INPUT GROUP */
+.input-group {
+  margin-bottom: 22px;
+}
+
+/* INPUTS */
+.onrent-form input {
+  width: 100%;
+  padding: 15px 18px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.15);
+
+  color: white;
+  font-size: 1rem;
+
+  transition: 0.3s;
+}
+
+/* PLACEHOLDER */
+.onrent-form input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* FOCUS EFFECT */
+.onrent-form input:focus {
+  background: rgba(255,255,255,0.22);
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(34,197,94,0.4);
+}
+
+/* FILE INPUT */
+.onrent-form input[type="file"] {
+  padding: 12px;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.onrent-form button {
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(135deg,#22c55e,#15803d);
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.onrent-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(34,197,94,0.35);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .onrent-form {
+    padding: 30px 20px;
+  }
+
+  .onrent-form h2 {
+    font-size: 1.8rem;
+  }
+
+}

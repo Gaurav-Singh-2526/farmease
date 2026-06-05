@@ -1,0 +1,85 @@
+
+/* Home.module.css */
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Slider Container */
+.sliderContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Each slide; default height for large screens */
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 600px; /* Default for desktops */
+  object-fit: cover;
+  display: none;
+}
+
+/* Show active slide */
+.active {
+  display: block;
+}
+
+/* Indicators */
+.indicators {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(138, 169, 137);
+  cursor: pointer;
+  border: none;
+}
+
+.indicator.active {
+  background-color: rgb(246, 150, 124);
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+/* For tablets and medium screens */
+@media (max-width: 992px) {
+  .slide {
+    height: 500px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .slide {
+    height: 400px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .slide {
+    height: 300px;
+  }
+}
+
+  

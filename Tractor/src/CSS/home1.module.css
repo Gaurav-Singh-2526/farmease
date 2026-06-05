@@ -1,0 +1,95 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background Images */
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Content */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 550px;
+  z-index: 2;
+}
+
+/* Badge */
+.badge {
+  background: rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+.content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.content span {
+  color: #22c55e;
+}
+
+/* Description */
+.desc {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.primary {
+  background: #22c55e;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary:hover {
+  transform: translateY(-3px);
+}
+
+.secondary {
+  border: 1px solid white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
